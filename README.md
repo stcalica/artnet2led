@@ -238,3 +238,5 @@ If you encounter any issues or have questions:
 1. Check the [issues page](https://github.com/yourusername/artnet-led-controller/issues)
 2. Create a new issue with detailed information
 3. Include your network setup and WLED configuration
+
+***Disclaimer: Coded by a professional programmer with a lot of help from AI. Please review code and give a try before relying on it for any commerical applications. Don't blind yourself either folks.***
