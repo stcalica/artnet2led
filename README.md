@@ -1,4 +1,4 @@
-# Art-Net LED Controller Library
+# Art-Net LED Controller Library & CLI Tool
 
 A Python library for controlling LED fixtures using Art-Net protocol over Ethernet networks.
 
