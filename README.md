@@ -28,6 +28,59 @@ pip install -e .
 pip install artnet-led-controller
 ```
 
+## Command-Line Usage
+
+This library can also be used as a command-line tool (CLI) after installation.
+
+### Installation
+
+If you have not already installed the package, do so from the project root:
+
+```bash
+pip install -e .
+```
+
+This will install the CLI tool `artnet-led-controller` into your Python environment.
+
+### Usage
+
+After installation, you can use the CLI from your terminal:
+
+```bash
+artnet-led-controller discover
+artnet-led-controller run chase --color red --duration 10
+artnet-led-controller run rainbow --speed 1.0
+artnet-led-controller run strobe --color white --fps 10
+artnet-led-controller off
+artnet-led-controller blackout
+```
+
+#### Example: Discover Fixtures
+
+```bash
+artnet-led-controller discover
+```
+
+#### Example: Run a Red Chase Pattern for 10 Seconds
+
+```bash
+artnet-led-controller run chase --color red --duration 10
+```
+
+#### Example: Emergency Blackout
+
+```bash
+artnet-led-controller blackout
+```
+
+For a full list of commands and options, run:
+
+```bash
+artnet-led-controller --help
+```
+
+> **Note:** The CLI entry point is provided by the `artnet_led_controller.cli:main` function and is installed automatically via the `console_scripts` entry in `setup.py`.
+
 ## Quick Start
 
 ```python
@@ -239,4 +292,4 @@ If you encounter any issues or have questions:
 2. Create a new issue with detailed information
 3. Include your network setup and WLED configuration
 
-***Disclaimer: Coded by a professional programmer with a lot of help from AI. Please review code and give a try before relying on it for any commerical applications. Don't blind yourself either folks.***
+**_Disclaimer: Coded by a professional programmer with a lot of help from AI. Please review code and give a try before relying on it for any commerical applications. Don't blind yourself either folks._**
